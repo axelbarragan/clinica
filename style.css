@@ -1,0 +1,164 @@
+/*style.css*/
+/*-- font-face --*/
+@font-face {
+    font-family: 'OfficeSquare';
+    src: url(assets/fonts/OfficeSquare.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(assets/fonts/futur.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(assets/fonts/Montserrat-Regular.otf) format('opentype');
+}
+.font-mont {
+	font-family: "Montserrat";
+}
+
+/*-- colores de texto --*/
+.letra-blanca {
+	color: #FFF;
+}
+/*-- colores de fondo --*/
+.fondo-negro {
+	background-color: #000;
+}
+.fondo-azul {
+	background-color: #009bbf;
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*--- secciones ---*/
+.seccion-contacto {
+	background-color: #000 !important;
+	width: auto;
+	height: 40px;
+	color: white;
+	font-family: "Montserrat" !important;
+	
+}
+.seccion a {
+	text-decoration: none;
+	color: #FFF !important;
+}
+.seccion a:hover {
+	color: #DDD !important;
+}
+.seccion h2 {
+	color: #009bbf !important;
+	text-transform: uppercase;
+	font-family: "OfficeSquare";
+}
+/*---*/
+.cover {
+	height: 96vh;
+	background: url(assets/img/DJI_0029.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.cover .cover-texto {
+	width: 600px;
+	color: white;
+	position: relative; 
+	left: 30%;
+	top: 30%;
+	transform: translateX(-50%);
+	background-color: rgba(51,51,51,0.5);
+	padding: 20px 20px;
+}
+.cover .cover-texto h1 {
+	font-family: "Futura" !important;
+	font-size: 4.5em;
+}
+.cover .cover-texto p {
+	font-family: "OfficeSquare" !important;
+}
+/*---*/
+.seccion {
+	background-color: #FFF;
+}
+.seccion p {
+	font-family: "Montserrat";
+}
+
+.cirugias:hover {
+	-moz-box-shadow:    inset 0 0 22px #000000;
+   -webkit-box-shadow: inset 0 0 22px #000000;
+   box-shadow:         inset 0 0 22px #000000;
+}
+
+.contacto {
+	height: 500px;
+	background: url(assets/img/FACHADA.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+	background: rgba(51,51,51,0.5);
+	padding: 0 !important;
+}
+.navbar-brand img {
+	width: 200px;
+}
+#nav .container {
+	padding: 20px 0 20px 0;
+}
+.nav-link {
+	color: #fff !important;
+}
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgb(51,51,51) !important;
+    padding: 0 !important;
+}
+.sticky.is-sticky img {
+	width: 150px;
+}
+.list-group-item {
+	background-color: transparent;
+	border-top: 1px solid #ddd;
+	border-radius: 0;
+	color: #fff;
+}
+
+::placeholder {
+  color: #009bbf;
+}
+
+.cliente {
+	height: 600px;
+	background: url(assets/img/5b2b38f4-c0d4-4b71-b025-672217f05786.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.cliente img {
+	width: 400px;
+}
+
+@media (max-width: 992px) {
+	.navbar-brand img {
+		width: 100px;
+	}
+	.cover .cover-texto {
+		left: 40%;
+	}	
+}
