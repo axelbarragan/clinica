@@ -41,6 +41,11 @@ $(document).ready(function() {
   /*Cerrar el menú después de dar algún "tap" (sólo moviles)*/
   $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
-});
+  });
+
+  $( '#nav .navbar-nav a' ).on( 'click', function () {
+  	$( '#nav .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+  	$( this ).parent( 'li' ).addClass( 'active' );
+  });
 
 });

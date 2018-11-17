@@ -13,29 +13,30 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   </head>
   <body>
-    <div id="top" class="seccion seccion-contacto d-flex align-items-center">
+    <div id="top" class="seccion seccion-contacto d-flex align-items-center .d-none .d-sm-block">
     	<div class="container ">
     		<div class="row social">
     			<div class="col-lg-6">
     				<a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-    				<a href="#"><i class="fab fa-whatsapp fa-lg"></i></a>
+    				<a class="pl-2" href="#"><i class="fab fa-whatsapp fa-lg"></i></a>
     			</div>
     			<div class="col-lg-6 text-right">
     			  <a href="mailto:www.example.com"><i class="fas fa-envelope fa-lg"></i> www.example.com</a>
-    			  <a href="tel:12345678"><i class="fas fa-phone fa-lg"></i> 12345678</a>
+    			  <a class="pl-2" href="tel:12345678"><i class="fas fa-phone fa-lg"></i> 12345678</a>
     			</div>
     		</div>
     	</div>
     </div>
     <div class="cover">
-    	<nav id="nav" class="navbar navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
+    	<nav id="nav" class="navbar navbar-expand-xl navbar-light top-navbar" data-toggle="sticky-onscroll">
     		<div class="container">
-    			<a class="navbar-brand" href="#top"><img src="assets/img/logo-hospital.png"><img src="assets/img/logo-web.png"></a>
+    			<a data-scroll class="navbar-brand" href="#top"><img src="assets/img/logo-hospital.png"><img src="assets/img/logo-web.png"></a>
     			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           	<ul class="navbar-nav pull-right">
+          		<li class="nav-item"><a data-scroll class="nav-link" href="#top">TOP</a></li>
           		<li class="nav-item"><a data-scroll class="nav-link" href="#services">SERVICES</a></li>
               <li class="nav-item"><a data-scroll class="nav-link" href="#satisfied-customers">SATISFIED CUSTOMERS</a></li>
               <li class="nav-item"><a data-scroll class="nav-link" href="#facilities">FACILITIES</a></li>
@@ -56,6 +57,8 @@
     			<div class="col-lg-12 py-2">
     				<h2 class="text-center">SERVICES</h2>
     			</div>
+    		</div>
+    		<div class="row">
     			<div class="col-md text-center fondo-azul letra-blanca py-3 cirugias">
     				<a href="#">
     					<i class="fas fa-notes-medical fa-4x pb-2"></i>
@@ -118,6 +121,8 @@
     			<div class="col-lg-12 py-2">
     				<h2 class="text-center">ABOUT US</h2>
     			</div>
+    		</div>
+    		<div class="row">
     			<div class="d-flex align-items-center">
     				<div class="col-md">
     					<p>
@@ -135,41 +140,126 @@
     		</div>
     	</div>
     </section>
-    <section id="contact" class="seccion py-5">
+    <section id="contact" class="seccion pt-5">
     	<div class="container-fluid">
     		<div class="row">
     			<div class="col-lg-12 py-2">
     				<h2 class="text-center">CONTACT</h2>
     			</div>
     		</div>
-    		<div class="row contacto ">
-    			<div class="col d-flex justify-content-center d-row">
-    				<img src="assets/img/logo-web.png">
-    				<ul class="list-group list-group-flush">
-    					<li class="list-group-item">DR. ROBERTO VALDEZ GÓMEZ</li>
-    					<li class="list-group-item">GENERAL AND LAPAROSCOPIC SURGERY</li>
-    					<li class="list-group-item">HOSPITAL ANGELES TAMPICO</li>
-    					<li class="list-group-item">MEDICAL OFFICE #610</li>
-    					<li class="list-group-item">5503 HIDALGO AVE</li>
-    					<li class="list-group-item">FLAMBOYANES, TAMPICO, TAM.</li>
-    				</ul>
+    		<div class="row contacto">
+    			<div class="col d-flex justify-content-center align-items-center">
+    				<div class="contenedor">
+    					<img src="assets/img/logo-web.png">
+    				  <p>DR. ROBERTO VALDEZ GÓMEZ</p>
+    				  <p>GENERAL AND LAPAROSCOPIC SURGERY</p>
+    				  <p>HOSPITAL ANGELES TAMPICO</p>
+    				  <p>MEDICAL OFFICE #610</p>
+    				  <p>5503 HIDALGO AVE</p>
+    				  <p>FLAMBOYANES, TAMPICO, TAM.</p>
+    				</div>
     			</div>
     			<div class="col">
+    				<!--<div class="">
     				<form>
-    					<div class="form-group">
-    						<input type="text" name="name" placeholder="Name">
+    					<div class="col-8">
+    						<input class="form-control" type="text" name="name" placeholder="Name">
     					</div>
     					<div class="form-group">
-    						<input type="email" name="email" placeholder="Email">
+    						<input class="form-control" type="email" name="email" placeholder="Email">
     					</div>
     					<div class="form-group">
-    						<input type="text" class="input-medium bfh-phone" data-format="(ddd) ddd-dddd">
+    						<input class="form-control" type="phone" name="phone" placeholder="Phone">
+    					</div>
+    					<div class="form-group">
+    						 <textarea class="form-control" rows="5" placeholder="Leave your message"></textarea>
     					</div>
     				</form>
+    			</div>-->
     			</div>
     		</div>
     	</div>
     </section>
+    <footer class="page-footer pt-3 pb-5">
+    	<div class="container text-center text-md-left">
+    		<div class="row">
+    			<div class="col-md-3 mx-auto">
+    				<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Comprehensive consultation</h5>
+    				<ul class="list-unstyled">
+    					<li>
+    						<a href="#!">Diagnostics</a>
+    					</li>
+    					<li>
+    						<a href="#!">Pre-operators</a>
+    					</li>
+              <li>
+                <a href="#!">Second opinion</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+          	<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Surgical interventions</h5>
+          	<ul class="list-unstyled">
+          		<li>
+          			<a href="#!">Chronic wou</a>
+              </li>
+              <li>
+                <a href="#!">Abdominal hernias </a>
+              </li>
+              <li>
+                <a href="#!">Gallbladder</a>
+              </li>
+              <li>
+                <a href="#!">Obesity (bariatric surgery)</a>
+              </li>
+              <li>
+                <a href="#!">Appendicitis</a>
+              </li>
+              <li>
+                <a href="#!">Acute pancreatitis</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+          	<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Minor surgery</h5>
+          	<ul class="list-unstyled">
+          		<li>
+                <a href="#!">Lipomas</a>
+              </li>
+              <li>
+                <a href="#!">Nails buried</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+          	<h5 class="font-weight-bold text-uppercase mt-3 mb-4">About us</h5>
+          	<ul class="list-unstyled">
+          		<li>
+                <a href="#!">Resume</a>
+              </li>
+              <li>
+                <a href="#!">Notice of privacy</a>
+              </li>
+              <li>
+                <a href="#!">Blog</a>
+              </li>
+              <li>
+                <a href="#!">Contact</a>
+              </li>
+              <li>
+                <a href="#!">Electronic file</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--<div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="#"> site.com</a>
+      </div>-->
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

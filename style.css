@@ -104,6 +104,14 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.contacto img {
+	height: 150px;
+}
+.contacto .contenedor  p {
+	margin-bottom: 0rem !important;
+	color: #FFF;
+	font-family: "Futura";
+}
 
 .navbar {
 	background: rgba(51,51,51,0.5);
@@ -117,6 +125,9 @@
 }
 .nav-link {
 	color: #fff !important;
+}
+#nav .active {
+	border-bottom: 3px solid #FFF;
 }
 .sticky.is-sticky {
     position: fixed;
@@ -154,11 +165,38 @@
 	width: 400px;
 }
 
+footer.page-footer {
+	background-color: #FFF !important;
+}
+footer.page-footer h5,a {
+	color: #009bbf;
+}
+
 @media (max-width: 992px) {
+	#top {
+		display: none !important;
+	}
 	.navbar-brand img {
 		width: 100px;
 	}
 	.cover .cover-texto {
-		left: 40%;
-	}	
+		left: 50%;
+		width: 500px;
+	}
+	.cover .cover-texto h1 {
+		font-size: 3.5em;
+  }
+}
+
+@media (max-width: 576px) {
+	.navbar-brand img {
+		width: 70px !important;
+	}
+	.cover .cover-texto {
+		left: 50%;
+		width: 400px;
+	}
+	.cover .cover-texto h1 {
+		font-size: 3em;
+  }
 }
